@@ -1,0 +1,288 @@
+/* MAIN STYLE */
+
+body{background: #F0F0F0;}
+.containerBorder{ 
+				background: white;
+				border-left: 1px solid #DCDCDC !important;
+				border-right: 1px solid #DCDCDC !important; }
+
+#navbar{margin-top: 3% !important;}
+
+#uploadForm input{ display: inline; }
+
+#uploadform submit{ display: inline; }
+
+div.grey-container{
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    border: 1px solid #DDD; 
+    padding: 30px;
+    margin-left: 10px;
+    margin-right: 10px;  
+}
+
+#uploadFileExcel{color:black;}
+
+.btn-bs-file{
+    position:relative;
+}
+.btn-bs-file input[type="file"]{
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width:0;
+    height:0;
+    outline: none;
+    cursor: inherit;
+}
+
+#submitButtonExcel{margin-left: 10%;
+				padding: 8px 8px 8px 8px}
+
+
+.redDangerTable{background-color:#E79C8C;}
+
+.greenSuccessTable{background-color:#BAF59A;}
+
+
+.menu-filters{       
+	position: absolute;
+    z-index: 2000;
+    background-color: rgba(255,255,255,0.95);
+    width: max-content;
+    left: -102px;
+    top:220px;
+    padding-right: 14%;
+    padding-left: 16%;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    }
+
+
+.firstFilter{font-size: 24px;}
+
+.titleFilters{ font-size: 22px;
+				text-align: center;
+				}
+.filersMenu{border: 1px solid #D0D0D0;
+				padding-top: 20px;
+				padding-bottom: 20px;}
+
+.listFilters{ list-style: none;
+				 }
+
+.listFilters li{display: inline;
+				margin-right: 5%;}
+
+.titleSelectFilter{ margin-left: 5%; }
+
+.searchTypeFilter{ width:800px;
+					margin-top:3%; }
+
+.searchTypeFilter select{ margin-left: 5%;
+						 margin-right: 5%; }
+
+.filterRows{margin-top: 3%;
+			margin-bottom:3%;}
+
+.filterRows select{display:inline-block;
+			width: 400px;}
+
+.tabsGut{margin-top:3%;}
+
+
+.tableExcel{margin-top: 3%;}
+
+
+.tabsCreateTool{margin-top:3%;
+				margin-bottom: 3%;}
+
+
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.25em; height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: .1em; left: .3em;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: #09ad7e;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid #4778d9!important;
+}
+
+
+.titleHeader{
+    font-family: "Trebuchet MS";
+    margin-left: 16px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    color:#525252;
+}
+
+.postTittleHeader{
+  font-family: "Trebuchet MS";
+    
+    font-size: 20px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    color:#525252;
+}
+
+.buttonsGrid{    
+    margin-top: 3%;
+    margin-bottom: 9%;
+  }
+
+.buttonGreen{ 
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 72px;
+    padding-right: 74px;
+    border-radius: 4px;
+    background-color: #a4e47c;
+    border: 1px solid #128604;
+    color: white;
+    font-size: 24px; }
+
+
+.buttonGreen:hover{
+      color:white;
+      text-decoration: none;
+      text-transform: none;
+      background-color: #5cb85c;
+
+
+}
+
+.buttonBlue{ 
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 72px;
+    padding-right: 74px;
+    border-radius: 4px;
+    background-color: #6793db;
+    border: 1px solid #1763dd;
+    color: white;
+    font-size: 24px; }
+
+
+.buttonBlue:hover{
+      color:white;
+      text-decoration: none;
+      text-transform: none;
+      background-color: #3775d9;
+
+
+}
+
+
+.whiteButton{ 
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 72px;
+    padding-right: 74px;
+    border-radius: 4px;
+    background-color: white;
+    border:1px solid #c3c3c3;
+    color: black;
+    font-size: 24px; }
+
+
+.whiteButton:hover{
+      color:black;
+      text-decoration: none;
+      text-transform: none;
+      background-color: #f1f1f1;
+
+
+}
+
+.buttonForm{
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
+
+.inheritText{
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    }
+
+.sendFormGrid{
+      margin-top: 1%;
+      margin-bottom: 1%;}
+
+
+.formAdd{
+      margin-left: 18%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+.resultsAddForm{margin-left:3%; }
+
+.resultsAddForm p{
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    color: #525252;
+}
