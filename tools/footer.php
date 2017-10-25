@@ -20,7 +20,7 @@ $( document ).ready(function() {
 			t[i].classList.remove("active");
 		}
 
-	}, 500);
+	}, 1000);
 
 });
 </script>
