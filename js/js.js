@@ -350,7 +350,7 @@ app.controller('AppCtrl',function($scope, $http) {
     }
     
     // END OF FUNCTION SEARCH
-     $http.get("listScript.php")
+    /* $http.get("listScript.php")
     .then(function(response) {
         console.log(response)
         $scope.results = response.data;
@@ -359,7 +359,7 @@ app.controller('AppCtrl',function($scope, $http) {
 
     });
    
-    /*
+    
     $scope.numberShowtools = 5;
     console.log($scope.numberShowtools)
     $scope.showTools = function(index){

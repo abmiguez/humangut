@@ -10,6 +10,14 @@
 <script src="js/js.js"></script>
 <?php if(ereg("/listOmic.php$", $_SERVER['REQUEST_URI'])){ ?> 
 <script>
+ $http.get("listScriptTool.php")                                                                                                                                                                             
+    .then(function(response) {                                                                                                                                                                               
+        console.log(response)                                                                                                                                                                                
+        $scope.results = response.data;                                                                                                                                                                      
+                                                                                                                                                                                                             
+        console.log(response)                                                                                                                                                                                
+                                                                                                                                                                                                             
+    });
 $( document ).ready(function() {
 	setTimeout(function(){
 
@@ -23,6 +31,18 @@ $( document ).ready(function() {
 	}, 1000);
 
 });
+</script>
+ <?php  }?>
+<?php if(ereg("/listRepositories.php$", $_SERVER['REQUEST_URI'])){ ?>
+<script>
+ $http.get("listScriptRepo.php")                                                                                                                                                                             
+    .then(function(response) {                                                                                                                                                                               
+        console.log(response)                                                                                                                                                                                
+        $scope.results = response.data;                                                                                                                                                                      
+                                                                                                                                                                                                             
+        console.log(response)                                                                                                                                                                                
+                                                                                                                                                                                                             
+    });
 </script>
  <?php  }?>
 </body>
