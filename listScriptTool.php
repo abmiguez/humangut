@@ -21,7 +21,7 @@
 					if( $rowInfo->date < $weekAgoTool)
 					{
 						$actuallyDayTool = date( "Y-m-d H:i:s", strtotime('-0 hours') );
-						//$newStatusTool = statusUrl($rowInfo->tool);
+						$newStatusTool = statusUrl($rowInfo->tool);
 
 						$sqlInfoUpdate = "UPDATE info SET status='".$newStatusTool['status']."', date='".$actuallyDayTool."' WHERE idInfo=".$rowInfo->idInfo."";
 						
