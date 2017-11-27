@@ -8,8 +8,12 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/js.js"></script>
+<<<<<<< Updated upstream
 <?php if(ereg("/listOmic.php$", $_SERVER['REQUEST_URI'])){ ?> 
 <script src="js/omic.js"></script>
+=======
+<?php if(preg_match("/listOmic.php$", $_SERVER['REQUEST_URI'])){ ?> 
+>>>>>>> Stashed changes
 <script>
 $( document ).ready(function() {
 	setTimeout(function(){
