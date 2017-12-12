@@ -145,12 +145,16 @@ app.controller('AppCtrl',function($scope, $http) {
     }
     
     // END OF FUNCTION SEARCH
-     $http.get("listScriptRepo.php")
+    $http.get("listScriptRepo.php")
     .then(function(response) {
         console.log(response)
         $scope.results = response.data;
-       
+    });
+
+    $http.get("threadUpdateRepo.php")
+    .then(function(response) {
         console.log(response)
+       
 
     });
    

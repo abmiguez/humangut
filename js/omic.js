@@ -216,9 +216,17 @@ app.controller('AppCtrl',function($scope, $http) {
         console.log(response)
         $scope.results = response.data;
        
-        console.log(response)
 
     });
+
+    $http.get("threadUpdateOmic.php")
+    .then(function(response) {
+        console.log(response)
+       
+
+    });
+
+
    /*
     
     $scope.numberShowtools = 5;
